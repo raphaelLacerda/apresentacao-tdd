@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>Profissão testador</title>
+
+<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+<meta name="author" content="Hakim El Hattab">
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/theme/default.css">
+
+<!-- For syntax highlighting -->
+<link rel="stylesheet" href="lib/css/zenburn.css">
+
+<script>
+	// If the query includes 'print-pdf' we'll use the PDF print sheet
+	document.write('<link rel="stylesheet" href="css/print/'
+			+ (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper')
+			+ '.css" type="text/css" media="print">');
+</script>
+
+<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Used to fade in a background when a specific slide state is reached -->
+		<div class="state-background"></div>
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<h1>Profissão Testador</h1>
+				<br /> <br /> <br />
+				<h3>Testar ou não Testar - eis a questão</h3>
+				<br />
+				<p />
+				<!-- 
+				<h5>Raphael Lacerda</h5>
+				<a>@lacerdaph</a>
+				-->
+			</section>
+
+			<section data-state="house">
+				<div class="textoCentral">
+					<h1>Operação médica</h1>
+				</div>
+			</section>
+
+			<section data-state="soothe">
+				<h1>Testes Automatizados</h1>
+				<br /> <br /> <br />
+				<h3>Just do it!</h3>
+				<br />
+				<p />
+				<!-- 
+				<h5>Raphael Lacerda</h5>
+				-->
+			</section>
+
+
+			<section data-state="stupidity">
+				<h2>Heads Up</h2>
+				<h3>
+					<em>Embrace your stupidity</em>
+				</h3>
+				<audio controls="controls">
+					<source src="audio/max.mp3" type="audio/mp3"></source>
+				</audio>
+			</section>
+
+			<section>
+				<table>
+					<tr>
+						<td><img alt="" src="img/compilou.png" width="100%" /></td>
+						<td><img alt="" src="img/works.png" width="100%" /></td>
+					</tr>
+				</table>
+
+				<br /> <br />
+				<h3>
+					<a><em> Not cool </em></a>
+				</h3>
+			</section>
+
+			<section>
+				<h2>whoami</h2>
+				<section>
+					<div>
+						<img src="img/bb.jpeg" />
+					</div>
+				</section>
+				<section>
+					<div>
+						<img height="150" src="img/caelum-logo.png" />
+					</div>
+					<div>
+						<img height="400" width="300" src="img/livroArquitetura.png" />
+					</div>
+				</section>
+				<section>
+					<div>
+						<img height="500" src="img/mundoJ.jpeg" />
+					</div>
+
+				</section>
+				<!--
+				<section>
+					<p>
+						<img height="500" src="img/eu.jpg" />
+					</p>
+					<p>
+						<i><small>- <a href="http://hakim.se">raphael.lacerda@caelum.com.br</a> / <a href="http://twitter.com/hakimel">@lacerdaph</a></small></i>
+					</p>
+				</section>
+				-->	
+			</section>
+
+			<section>
+				<h2>TDD - The BuzzWord</h2>
+				<section>
+					<p>
+						<img height="200" src="img/mundoJ.jpeg" /> <img height="200" src="img/mundoJ43.jpeg" /> <img height="200"
+							src="img/mundoJ44.jpeg" /> <img height="200" src="img/mundoJ46.jpeg" /> <img height="200" src="img/mundoJ50.jpeg" /> <img
+							height="200" src="img/javamagazine.jpeg" />
+					</p>
+				</section>
+				<section>
+					<img height="200" src="img/tddbook1.jpeg" /> <img height="200" src="img/tddbook2.png" /> <img height="200"
+						src="img/tddbook3.jpeg" /> <img height="200" src="img/tddbook4.jpeg" /> <img height="200" src="img/tddbook5.jpeg" /> <img
+						height="200" src="img/tddbook6.jpeg" /> <img height="200" src="img/tddbook7.jpeg" /> <img height="200"
+						src="img/tddbook8.jpeg" /> <img height="200" src="img/tddbook9.jpeg" />
+				</section>
+			</section>
+			<section>
+				<h2>What is?</h2>
+				<img height="500" src="img/TDD1.jpeg" />
+			</section>
+
+			<section>
+				<h2>Vantagens</h2>
+				<ul>
+					<li>Evita escrever código desnecessário;</li>
+					<li>Baixo acoplamento - Alta coesão;</li>
+					<li>Feedback rápido;</li>
+					<li>Regressão;</li>
+					<li>Influência sobre o design da aplicação.</li>
+				</ul>
+				<br /> <br /> <br />
+				<blockquote>Test-First programming is not a testing technique</blockquote>
+				Cunningham, Ward
+			</section>
+
+			<section data-markdown>
+				## Codificando...
+
+				<pre>
+					<code contenteditable style="font-size: 23px;" class="java">
+					
+				public class ContaController(){
+						
+				 public void adiciona(Conta conta){
+						
+				  DAOFactory().getContaDAO().adiciona(conta);
+  EnviadorDeEmail.enviar(conta.getTitular().getEmail());
+				 }
+				}
+					</code>
+				</pre>
+			</section>
+
+			<section>
+				<br /> <br /> <br /> <br /> <br />
+				<h3>
+					<code>mas isso você já sabe...</code>
+				</h3>
+				<h3>
+					<em>Talvez, o que você não saiba...</em>
+				</h3>
+			</section>
+
+			<section>
+				<h2>Desvantagens*</h2>
+				<section>
+					<ul>
+						<li>Não resolve todos os meus problemas;</li>
+						<li>Prática difícil - skill;</li>
+						<li>Influência sobre o design*.</li>
+					</ul>
+					<br /> <br />
+					<blockquote>...By the time the project was canceled, enough other projects had replicated C3's early success to
+						continue XP's development. C3's cancellation, however, also proves that XP is no guarantee of success...</blockquote>
+					Fowler, Martin
+				</section>
+				<section data-state="vingador">
+					<div style="margin-left: 420px;">
+						<h3 class="bad-font">
+							<em>Iremos arder no mármore do inferno ágil</em>
+						</h3>
+					</div>
+				</section>
+			</section>
+
+			<section>
+				<h2>Resumindo</h2>
+				<ul>
+					<li>Testes de métodos privados? - spy's;</li>
+					<li>Olhe para suas asserções;</li>
+					<li>Olhe para o seu cenário inicial;</li>
+					<li>Olhe para o nome do seu método;</li>
+					<li>TDD é uma ferramenta que aponta erros.</li>
+				</ul>
+				<br /> <br />
+				<div class="fragment">
+					<h3>Evolução</h3>
+					<a><em>Não testável</em> - <code>Testável</code> - <strong>Testes coesos</strong></a>
+				</div>
+			</section>
+
+			<section>
+				<h2>It's always your fault</h2>
+				<img height="500" src="img/TDD.jpg" />
+			</section>
+
+			<section data-state="change">
+				<h2 style="margin-left: -400px;">Por que estou aqui?</h2>
+				<br /> <br /> <br /> <br />
+				<div style="margin-left: -400px; margin-top: 200px;">
+					<h3>
+						<em>Testes automatizados</em>
+					</h3>
+				</div>
+			</section>
+
+			<section>
+				<h2>Quem deveria fazê-los?</h2>
+				<br /> <br /> <br /> <br />
+				<h3>Programador! É claro!*</h3>
+			</section>
+
+			<section>
+				<h2>Pq vc não faz?</h2>
+				<blockquote>...Uso JavaEE - não sei isolar classes do contexto...</blockquote>
+				<br />
+				<blockquote>...Só faço CRUD...</blockquote>
+				<br />
+				<blockquote>...Entedo os ganhos, mas não tenho a manha...</blockquote>
+				<br />
+				<blockquote>...Irá atrasar a entrega do projeto....</blockquote>
+				<br />
+				<blockquote>...Custo alto! Meu progamador fará mais código...</blockquote>
+			</section>
+
+			<section>
+				<h2>Nossa área</h2>
+				<div align="center">
+					<table>
+						<tr align="left">
+							<td>Teórico</td>
+							<td>Prático</td>
+							<td>Acadêmico</td>
+						</tr>
+						<tr align="left">
+							<td align="left"><img height="400" width="340" src="img/martin.jpeg" /></td>
+							<td align="left"><img height="400" width="340" src="img/chuck.jpeg" /></td>
+							<td align="left"><img height="400" width="340" src="img/sheldon.jpeg" /></td>
+						</tr>
+					</table>
+				</div>
+			</section>
+
+
+			<section>
+				<div class="textoCentral">
+					<h2>
+						<code>Legacy code</code>
+					</h2>
+				</div>
+
+			</section>
+
+			<section data-state="tight1">
+				<h2>Ok... eu vou!</h2>
+			</section>
+			<section data-state="tight2">
+				<div style="margin-top: 420px; margin-left: 650px;">
+					<h2>give up...</h2>
+				</div>
+			</section>
+
+			<section>
+				<h2>pensando...</h2>
+				<blockquote>...You should think of it as walking a tightrope without a net. If you are good at walking a
+					tightrope, and it's not that high up, then you might try it. But if you've never walked a tightrope before, and it's over
+					Niagara Falls, you probably want a good net...</blockquote>
+				Fowler, Martin
+			</section>
+
+			<section data-state="tight3">
+				<h2>but you can try...</h2>
+			</section>
+
+			<section>
+				<h2>Custos</h2>
+				<img alt="http://martinfowler.com/bliki/DesignStaminaHypothesis.html" src="img/design.png" height="400" />
+				<blockquote>...Há uma grande sinergia entre testabilidade e um bom design..</blockquote>
+				Feathers, Michael
+			</section>
+
+			<section>
+				<h2>Produtividade</h2>
+				<br /> <br />
+				<p>
+					<em>Como medir produtividade?</em>
+				</p>
+				<p>
+					<code>Linhas de código?</code>
+				</p>
+				<p>
+					<code>Quem entrega mais rápido?</code>
+				</p>
+				<p>
+					<code>Horário de saída?</code>
+				</p>
+				<p>
+					<code>Quem faz mais build?</code>
+				</p>
+				<p>
+					<code>Quem faz mais commits?</code>
+				</p>
+			</section>
+			<section data-state="blackout">
+				<h2>A Tale of two cities</h2>
+				<h4 class="fragment">Produtividade</h4>
+				<img class="fragment" alt="" src="img/Testes1.jpg" /> <img class="fragment" alt="" src="img/Testes2.png" />
+			</section>
+
+			<section data-state="blackout">
+				<img alt="" src="img/Testes3.png" width="600" /> <img class="fragment" alt="" src="img/Testes4.png" width="600" />
+			</section>
+
+			<section data-state="blackout">
+				<img alt="" src="img/Testes5.png" />
+			</section>
+
+			<section data-state="blackout">
+				<img alt="" src="img/Testes6.png" width="600" /> <img alt="" src="img/Testes7.png" width="600" class="fragment" />
+				<center class="fragment">
+					<a>Conclusão</a>
+				</center>
+			</section>
+
+			<section data-state="mecanico">
+				<div style="margin-top: 200px;">
+					<h1>MECÂNICO</h1>
+				</div>
+			</section>
+
+			<section data-state="blackout">
+				<div style="margin-top: 200px">
+					<h3>Voltando....</h3>
+					<h3>6 meses depois....</h3>
+					<h4>Nova funcionalidade...</h4>
+				</div>
+			</section>
+
+			<section data-state="blackout">
+				<h3>Tendência de programador</h3>
+				<img alt="" src="img/Testes8.png" />
+			</section>
+
+
+			<section>
+				<h2>Aniche's Time - Indústria</h2>
+				<h3></h3>
+				<section>
+					<ul>
+						<li class="fragment">Microsoft e IBM - produtos com 40-90% com menos defeitos</li>
+						<li class="fragment">92 a 98% de cobertura</li>
+						<li class="fragment">87% acreditou que TDD facilitou o entendimento dos requisitos</li>
+						<li class="fragment"><strong>Redução de 40-50% na quantidade de bugs</strong></li>
+						<li class="fragment">78% acreditou que aumentou a produtividade</li>
+						<li class="fragment">92% acreditou que aumentou a qualidade do código</li>
+						<li class="fragment">79% acreditou que TDD provê indicativos para design simples</li>
+						<li class="fragment"><strong>Aumentou o tempo inicial do desenvolvimento em 15% a 35%</strong></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>e tem mais...</h2>
+					<ul>
+						<li class="fragment">Menos tempo debugando</li>
+						<li class="fragment">Complexidade menor e quantidade de cobertura maior</li>
+						<li class="fragment">Bugs quando encontrados eram corrigidos em um tempo menor</li>
+						<li class="fragment">...e quando corrigidos gerava menos novos bugs</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<h2>Aniche's TIme - Academia</h2>
+				<ul>
+					<li class="fragment">24 estudos na graduação informando que aumentou a produtividade</li>
+					<li class="fragment"><em>... porém nenhuma diferença na qualidade de código</em></li>
+					<li class="fragment">3 grupos diferentes de alunos - TDD/Last/Without
+						<ol>
+							<li>Codigo TDD mais O.O</li>
+							<li>Team TDD entregou mais features</li>
+							<li>2x mais asserções e cobriu 86% mais branches</li>
+							<li>Valores de acoplamento 104% menor que o Team sem testes</li>
+							<li>Métodos 43% menos complexos</li>
+						</ol>
+					</li>
+					<li class="fragment"><em>59 estudantes, código com TDD tem 45% menos bugs</em></li>
+				</ul>
+				<a class="fragment" href="http://www.aniche.com.br/2010/04/tdd-realmente-ajuda/">Mauricio Aniche - estudo sobre TDD</a>
+			</section>
+
+			<section>
+				<h2>100% de cobertura</h2>
+
+				<img alt="" src="img/coverage2.png" width="800" />
+
+				<blockquote>...If you make a certain level of coverage a target, people will try to attain it. The trouble is
+					that high coverage numbers are too easy to reach with low quality testing...</blockquote>
+			</section>
+
+			<section data-markdown>
+				## Codificando...
+
+				<pre>
+					<code contenteditable style="font-size: 36px;">
+					
+int maior(Integer a, Integer b){
+
+	if(a > b){
+		return a;
+	}
+	else{
+		return b;
+	}
+}	
+					</code>
+				</pre>
+			</section>
+
+			<section>
+				<h2>EclEmma</h2>
+				<img alt="" src="img/eclemma.png" />
+			</section>
+
+			<section>
+				<h2>
+					Categorias
+					<h2 />
+			</section>
+
+			<section>
+				<h2>Unidade</h2>
+				<p>
+					<em>O que testar?</em><br />
+					<code class="fragment">Vantagens?</code>
+					<br /> <strong class="fragment">Ferramentas?</strong>
+				</p>
+				<p class="fragment">
+					<img alt="" src="img/mockito.jpg" /> <img alt="" src="img/easymock.gif" /> <img alt="" src="img/jmock.png" /> <img alt=""
+						src="img/jBehave.jpeg" /><img alt="" src="img/mirror.png" />
+				</p>
+			</section>
+
+			<section data-markdown>
+				## Código
+
+				<pre>
+					<code contenteditable style="font-size: 23px;">
+					
+class Faturamento{
+
+	public Faturamento(EnviadorDeMensagem enviador){
+	
+	}
+	
+	public void faturar(OrdemDeCompra ordemDeCompra){
+		
+	  if(ordemDeCompra.getData().after("12/10/2010")){
+	  	ordemDeCompra.descontar(10);
+		enviador.enviar("Faturada com sucesso");
+	  }else{
+		enviador.enviar("Ordem de compra irregular");
+	  }
+	}
+}
+					</code>
+				</pre>
+			</section>
+
+			<section data-markdown>
+				## Teste
+
+				<pre>
+					<code contenteditable style="font-size: 23px;">
+class FaturamentoTest{
+
+ @Test
+ public void quandoFaturarComDataInviavel(){
+  OrdemDeCompra ordem = new OrdemDeCompra("12/09/09");
+  faturamento.faturar(ordem);
+  verify(enviador).enviar("Ordem de compra irregular");	
+ }
+ @Test
+ public void quandoFaturarComDataViavel(){
+  OrdemDeCompra ordem = new OrdemDeCompra(100);
+  faturamento.faturar(ordem);
+  assertEquals(90, ordem.getValor());
+  verify(enviador).enviar("Faturada com sucesso");
+ }
+//se a ordem de compra fosse null?
+//se a data fosse null?
+//e se a data for no mesmo dia 12/10/2010?
+}
+					</code>
+				</pre>
+			</section>
+
+			<section style="margin-left: -60%">
+				<video width="1120" controls="controls">
+					<source src="video/unidade.mov"></source>
+				</video>
+			</section>
+
+			<section>
+				<h2>Integracao</h2>
+
+				<em>O que testar?</em><br />
+				<code class="fragment">Vantagens?</code>
+				<br /> <strong class="fragment">Ferramentas?</strong> <br />
+				<p class="fragment">
+					<img alt="" src="img/bjunit.jpeg" /> <img alt="" src="img/httpclient.png" /> <img alt="" src="img/arquilian.png" /> <img
+						alt="" src="img/jsfunit.png" />
+				</p>
+			</section>
+
+			<section style="margin-left: -60%">
+				<video width="1120" controls="controls">
+					<source src="video/integracao.mov"></source>
+				</video>
+			</section>
+
+			<section>
+				<h2>Polêmica Bill Burke</h2>
+
+				<div style="margin-top: 100px">
+					<blockquote>...Test in the real environment and get results that are truly valid. Stop kidding yourself with
+						mocks...</blockquote>
+				</div>
+				<a href="http://www.guj.com.br/java/271968-testes-unitarios--mocks-sao-realmente-necessarios">GuJ</a>
+			</section>
+
+			<section>
+				<h2>my two cents</h2>
+				<blockquote>well, maybe, some day, because of the facilities that tools like Arquillian bring to the tests, they
+					are going to be useless… BUT, i don’t see how they help on the application design… because it’s has already a container
+					started and gives you all the dependencies, even if your object are to coupled or doing so much stuff that it wasn’t supposed
+					to do.</blockquote>
+				Lacerda, Raphael
+			</section>
+
+			<section>
+				<h2>Sistema</h2>
+				<p class="textoCentral">
+					<em>O que testar?</em><br />
+					<code class="fragment">Vantagens?</code>
+					<br /> <strong class="fragment">Ferramentas?</strong> <br /> <img alt="" src="img/selenium.png" class="fragment">
+				</p>
+			</section>
+
+			<section data-markdown>
+				## Simple code
+				<pre>
+					<code contenteditable style="margin-top: -30px;">
+@Test					
+public void quandoUsuarioBuscarPorFuncionarioValido1()
+	{
+
+		WebElement chave = driver.findElement(By.id("formFuncionario:chave"));
+		chave.sendKeys("F8437296");
+
+		WebElement pesquisar = driver.findElement(By.id("formFuncionario:pesquisar"));
+		pesquisar.click();
+
+		WebElement funcionario = (new WebDriverWait(driver, 120)).until(ExpectedConditions.visibilityOfElementLocated(By
+				.id("textDadosFuncionarios")));
+
+		assertNotNull(funcionario);
+	}				
+				</code>
+				</pre>
+			</section>
+
+			<section>
+				<section>
+					<section>
+						<div class="textoCentral">
+							<h2>
+								<em>Not Anymore</em>
+							</h2>
+						</div>
+					</section>
+				</section>
+				<section data-markdown data-state="alert">
+					<pre>
+					<code contenteditable style="margin-top: -120px;">
+@Test
+public void quandoUsuarioPesquisarClienteValidoUsandoCodigoMCIAcessandoPeloMenuGAW()
+	{
+		driver.navigate().to("localhost:8443.bb.com.br/gaw/APPS");
+		(new WebDriverWait(driver, 120)).until(ExpectedConditions.visibilityOfElementLocated(By.id("atalhosAplicativos")));
+
+		WebElement botao = driver.findElement(By.id("0"));
+		botao.click();
+
+		(new WebDriverWait(driver, 3000)).until(new Function<WebDriver , Boolean>() {
+
+			public Boolean apply(WebDriver arg0)
+			{
+
+					for (WebElement webElement : driver.findElements(By.tagName("iframe")))
+					{
+						if (webElement.getAttribute("src").trim().equals("/coc/APPS/pesquisaCLiente"))
+						{
+							frame = webElement;
+							return true;
+						}
+					}
+					return false;
+			}
+		});
+
+		driver.switchTo().frame(frame);
+
+		WebElement campo1 = driver.findElement(By.id("frm:agenciaOpt1Txt"));
+		campo1.clear();
+
+		WebElement campo2 = driver.findElement(By.id("frm:Codigo"));
+		campo2.sendKeys("17");
+
+		WebElement campo3 = driver.findElement(By.id("frm:Pesquisa"));
+		campo3.click();
+					
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						</code>
+				</pre>
+				</section>
+			</section>
+
+			<section>
+				<div class="textoCentral">
+					<h3>Ferramentas + Padrões = Selenium + PageObjects</h3>
+				</div>
+			</section>
+
+			<section style="margin-left: -60%">
+				<video width="1120" controls="controls">
+					<source src="video/sistema.mov"></source>
+				</video>
+			</section>
+
+			<section>
+				<h2>Conclusão</h2>
+				<img alt="" src="img/tests.jpeg" width="800" /> http://lisacrispin.com/wordpress/category/agile-testing-quadrants/
+			</section>
+			<section>
+				<h2>La garantia??</h2>
+				<h3>
+					<em>.... La garantia soy yo</em>
+				</h3>
+				<img alt="" src="img/garantia.png" width="400">
+			</section>
+
+			<section>
+				<h1>THE END</h1>
+				<h3>Raphael Lacerda</h3>
+				<h4>
+					<a>@lacerdaph</a>
+				</h4>
+			</section>
+		</div>
+
+		<!-- The navigational controls UI -->
+		<aside class="controls">
+			<a class="left" href="#">&#x25C4;</a> <a class="right" href="#">&#x25BA;</a> <a class="up" href="#">&#x25B2;</a> <a
+				class="down" href="#">&#x25BC;</a>
+		</aside>
+
+		<!-- Presentation progress bar -->
+		<div class="progress">
+			<span></span>
+		</div>
+
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+
+	<script>
+		// Full list of configuration options available here:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls : true,
+			progress : true,
+			history : true,
+
+			transition : Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+
+			// Optional libraries used to extend on reveal.js
+			dependencies : [ {
+				src : 'lib/js/highlight.js',
+				async : true,
+				callback : function() {
+					window.hljs.initHighlightingOnLoad();
+				}
+			}, {
+				src : 'lib/js/classList.js',
+				condition : function() {
+					return !document.body.classList;
+				}
+			}, {
+				src : 'lib/js/showdown.js',
+				condition : function() {
+					return !!document.querySelector('[data-markdown]');
+				}
+			}, {
+				src : 'lib/js/data-markdown.js',
+				condition : function() {
+					return !!document.querySelector('[data-markdown]');
+				}
+			}, {
+				src : 'socket.io/socket.io.js',
+				async : true,
+				condition : function() {
+					return window.location.host === 'localhost:1947';
+				}
+			}, {
+				src : 'plugin/speakernotes/client.js',
+				async : true,
+				condition : function() {
+					return window.location.host === 'localhost:1947';
+				}
+			}, ]
+		});
+	</script>
+
+</body>
+</html>

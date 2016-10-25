@@ -1,0 +1,13 @@
+.DS_Store
+.svn
+log/*.log
+tmp/**
+node_modules/
+*.mov
+video/**
+video/*.mov
+/video
+video
+audio
+/audio
+*.mp3
